@@ -1,0 +1,53 @@
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for each card */
+  .card {
+    position: relative;
+    width: 30%;  /* Adjust as needed */
+    height: 70%; /* Adjust as needed */
+    overflow: hidden; /* Ensures that content doesn't overflow the card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(56, 241, 23, 0.1);
+    background-color: #ebf5e8;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  
+  /* Style for the images inside the cards */
+  .card img {
+    width: 95%;    /* Make the image span the full width of the card */
+    height: 90%;   /* Make the image span the full height of the card */
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid #d6e6d1;
+    object-fit: cover;  /* Ensures the image covers the entire area of the card */
+    object-position: center; /* Center the image if it doesn't completely fill */
+    transition: transform 0.3s ease; /* Optional: smooth zoom effect on hover */
+  }
+  
+  /* Optional: Adding a hover effect for the images */
+  .card:hover img {
+    transform: scale(1.05); /* Slight zoom effect when hovering over the card */
+  }
+
+  .card h3{
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+
+  .card p{
+    margin: 5px 0;
+    padding: 10px 0;
+  }

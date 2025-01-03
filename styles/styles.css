@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -35,14 +34,14 @@
   .hero p {
     color: white;
     font-size: 1.8rem; /* Adjust the font size */
-    margin: 10px 10px 10px 40px; /* Space between the paragraph and the button */
+    margin: 10px 10px 10px 30px; /* Space between the paragraph and the button */
   }
   
   .cta-button {
     background-color: #11be08; /* Set button color */
     color: white;
     font-size: 1.3rem;
-    margin: 10px 10px 0px 40px;
+    margin: 10px 10px 0px 30px;
     padding: 15px 25px;
     border: none;
     border-radius: 5px;
@@ -54,25 +53,41 @@
     background-color: #8bf0a0; /* Button hover effect */
   }
   
+  footer{
+    text-align: center;
+    background-color: #ebf5e8;
+    padding: 10px 0;
+  }
   /* Media Query for Tablets (up to 768px) */
   @media (max-width: 768px) {
-    .hero {
-      height: 100vh; /* Reduce height on tablets */
-      padding: 15px;
-    }
+    
   
     .hero h1 {
-      font-size: 2.5rem; /* Reduce font size for smaller screens */
+      color: antiquewhite;
+      font-size: 3rem; /* Reduce font size for smaller screens */
+      margin:80px 10px 20px 30px;
     }
   
     .hero p {
-      font-size: 1.2rem; /* Adjust paragraph font size */
-      margin-bottom: 15px;
+      color: white;
+    font-size: 1.8rem; /* Adjust the font size */
+    margin: 10px 10px 10px 30px;
     }
   
     .cta-button {
-      font-size: 1rem; /* Adjust button font size */
-      padding: 8px 16px; /* Adjust button padding */
+      background-color: #11be08; /* Set button color */
+      color: white;
+      font-size: 1.3rem;
+      margin: 10px 10px 0px 30px;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      background-color: #8bf0a0; /* Button hover effect */
     }
   }
   
