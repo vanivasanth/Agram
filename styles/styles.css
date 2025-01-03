@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the height of the header section to cover the full viewport height */
+.hero {
+    position: relative;
+    height: 100vh; /* 100% of the viewport height */
+    background-image: url('../assets/nature.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center center; /* Center the image */
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust this for the glassy effect */
+    z-index: 0; /* Ensure the overlay is beneath the content */
+  }
+  
+  .hero-content {
+    height: 90vh;
+    margin-bottom: 40px; /* Space between content and bottom */
+    z-index: 1; /* Ensure the content is above the background image */
+    max-width: 95%; /* Ensure the content doesn't stretch too far */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hero h1 {
+    color: antiquewhite;
+    font-size: 3rem; /* Adjust the font size */
+    margin:80px 10px 20px 30px; /* Add spacing between the title and the paragraph */
+  }
+  
+  .hero p {
+    color: white;
+    font-size: 1.8rem; /* Adjust the font size */
+    margin: 10px 10px 10px 40px; /* Space between the paragraph and the button */
+  }
+  
+  .cta-button {
+    background-color: #11be08; /* Set button color */
+    color: white;
+    font-size: 1.3rem;
+    margin: 10px 10px 0px 40px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #8bf0a0; /* Button hover effect */
+  }
+  
+  /* Media Query for Tablets (up to 768px) */
+  @media (max-width: 768px) {
+    .hero {
+      height: 100vh; /* Reduce height on tablets */
+      padding: 15px;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem; /* Reduce font size for smaller screens */
+    }
+  
+    .hero p {
+      font-size: 1.2rem; /* Adjust paragraph font size */
+      margin-bottom: 15px;
+    }
+  
+    .cta-button {
+      font-size: 1rem; /* Adjust button font size */
+      padding: 8px 16px; /* Adjust button padding */
+    }
+  }
+  
+  /* Media Query for Mobile (up to 480px) */
+  @media (max-width: 520px) {
+    .hero {
+      height: 100vh; /* Reduce height further on mobile */
+      padding: 10px;
+    }
+    .hero-content {
+        height: 90vh;
+        margin-bottom: 40px; /* Space between content and bottom */
+        z-index: 1; /* Ensure the content is above the background image */
+        max-width: 90%; /* Ensure the content doesn't stretch too far */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    .hero h1 {
+        color: white;
+        font-size: 2.5rem; /* Adjust the font size */
+        margin:5px 10px 20px 10px;
+    }
+  
+    .hero p {
+      color: white;
+      font-size: 1.5rem; 
+      margin: 30px 10px 20px 10px;
+    }
+  
+    .cta-button {
+        background-color: #11be08; /* Set button color */
+        color: white;
+        font-size: 1.3rem;
+        margin: 10px 10px 0px 10px;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+        background-color: #8bf0a0; /* Button hover effect */
+      }
+  }
+  
